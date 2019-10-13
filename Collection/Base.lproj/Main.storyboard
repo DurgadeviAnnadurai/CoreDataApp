@@ -65,14 +65,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zEl-lh-nDr">
-                                <rect key="frame" x="50" y="129" width="314" height="312"/>
+                                <rect key="frame" x="50" y="99" width="314" height="312"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zEl-lh-nDr" secondAttribute="height" multiplier="1:1" id="OBy-dc-95p"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJl-p3-LFH">
-                                <rect key="frame" x="50" y="488" width="314" height="40"/>
+                                <rect key="frame" x="50" y="432" width="314" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="sqy-yH-nnx"/>
                                 </constraints>
@@ -80,7 +80,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnb-Bg-YxY">
-                                <rect key="frame" x="192" y="576" width="30" height="40"/>
+                                <rect key="frame" x="192" y="482" width="30" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Duh-Dp-cxv"/>
                                 </constraints>
@@ -92,13 +92,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="gnb-Bg-YxY" firstAttribute="top" secondItem="qJl-p3-LFH" secondAttribute="bottom" constant="48" id="2mF-tm-18Q"/>
+                            <constraint firstItem="gnb-Bg-YxY" firstAttribute="top" secondItem="qJl-p3-LFH" secondAttribute="bottom" constant="10" id="2mF-tm-18Q"/>
                             <constraint firstItem="dFy-ZB-bIU" firstAttribute="trailing" secondItem="zEl-lh-nDr" secondAttribute="trailing" constant="50" id="2oc-Bn-OuQ"/>
-                            <constraint firstItem="zEl-lh-nDr" firstAttribute="top" secondItem="dFy-ZB-bIU" secondAttribute="top" constant="40" id="8Yb-cM-8qY"/>
+                            <constraint firstItem="zEl-lh-nDr" firstAttribute="top" secondItem="dFy-ZB-bIU" secondAttribute="top" constant="10" id="8Yb-cM-8qY"/>
                             <constraint firstItem="qJl-p3-LFH" firstAttribute="leading" secondItem="dFy-ZB-bIU" secondAttribute="leading" constant="50" id="GD5-Jv-PrS"/>
                             <constraint firstItem="zEl-lh-nDr" firstAttribute="leading" secondItem="dFy-ZB-bIU" secondAttribute="leading" constant="50" id="Ips-xF-KIH"/>
                             <constraint firstItem="zEl-lh-nDr" firstAttribute="centerX" secondItem="GYj-8n-Pew" secondAttribute="centerX" id="MCe-H0-pxE"/>
-                            <constraint firstItem="qJl-p3-LFH" firstAttribute="top" secondItem="zEl-lh-nDr" secondAttribute="bottom" constant="46" id="Pkv-FZ-wiT"/>
+                            <constraint firstItem="qJl-p3-LFH" firstAttribute="top" secondItem="zEl-lh-nDr" secondAttribute="bottom" constant="20" id="Pkv-FZ-wiT"/>
                             <constraint firstItem="gnb-Bg-YxY" firstAttribute="centerX" secondItem="qJl-p3-LFH" secondAttribute="centerX" id="hgE-1e-l8t"/>
                             <constraint firstItem="qJl-p3-LFH" firstAttribute="width" secondItem="zEl-lh-nDr" secondAttribute="width" id="j9A-l4-QgN"/>
                         </constraints>

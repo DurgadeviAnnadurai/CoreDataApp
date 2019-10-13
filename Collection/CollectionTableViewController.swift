@@ -22,6 +22,7 @@ class CollectionTableViewController: UITableViewController {
    
     
   }
+    
    func getCollections(){
        if let context=(UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
               {

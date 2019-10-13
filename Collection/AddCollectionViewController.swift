@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddCollectionViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+class AddCollectionViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextFieldDelegate{
 
     @IBOutlet weak var imgview: UIImageView!
     @IBOutlet weak var txtFieldTitle: UITextField!
@@ -18,9 +18,19 @@ class AddCollectionViewController: UIViewController,UIImagePickerControllerDeleg
    
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         imagePickerController.delegate=self
+        txtFieldTitle.delegate=self
+       
         // Do any additional setup after loading the view.
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+       textField.resignFirstResponder()
+       return true
+    }
+    
+    
     @IBAction func cameraTapped(_ sender: Any) {
         imagePickerController.sourceType = .camera
         present(imagePickerController, animated: true, completion: nil)
